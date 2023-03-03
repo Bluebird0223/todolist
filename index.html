@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- this is my html file -->
+	<title>To-Do List</title>
+    <!-- for icons -->
+    <script src="https://kit.fontawesome.com/8d88c863cc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/8d88c863cc.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- box -->
+    <div id="box" style=" 
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    ">
+        <!-- box containers -->
+        <div id="box-container" >
+            
+            <h1>To-Do List</h1>
+            <div id="task-container">
+                <input type="text" id="new-task" placeholder="Add a task...">
+                <button id="add-task">Add</button>
+                <ul id="task-list"></ul>
+            </div>
+            <!-- filter buttons  thes are buttons for filter like active tasks and others-->
+            <div id="filter-container">
+                <button id="all-tasks">All</button>
+                <button id="active-tasks">Active</button>
+                <button id="completed-tasks">Completed</button>
+                <button id="clear-completed">Delete Completed</button>
+                <button id="complete-all"><i class="fa-solid fa-check-double"></i>Complete All</button>
+            </div>
+            <!-- count span  this is task counter-->
+            <div id="count-container">
+                <span id="count" style="color: #777777;"></span>
+            </div>
+        </div>
+    </div>
+	<script src="/script.js"></script>
+</body>
+</html>
